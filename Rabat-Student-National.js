@@ -555,9 +555,9 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
     //-------------------//
 
 })();
-    console.log("تم تنفيذ الشيفرة لزر CAsa reunification visa   Normal بنجاح!");
+    console.log("تم تنفيذ الشيفرة لزر Rabat Students - Non-tertiary studies   Normal بنجاح!");
   });
-  const RabatNPremiumButton = createButton("Casa  reunification visa  Premium", function() {
+  const RabatNPremiumButton = createButton("RabatStudents - Non-tertiary studies  Premium", function() {
 (function () {
     "use strict";
 
@@ -589,7 +589,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(6); //6 corresponds to 'Casablanca'
+                    Location.select(4); //4 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -613,7 +613,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(1); // 1 corresponds to 'CAsaNational '
+                    VisaType.select(1); // 1 corresponds to 'National '
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -726,10 +726,10 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
     //-------------------//
 
 })();
-    console.log("تم تنفيذ الشيفرة لزر Casa  reunification visa Premium بنجاح!");
+    console.log("تم تنفيذ الشيفرة لزر Rabat Students - Non-tertiary studies  Premium بنجاح!");
   });
 
-  const CasaWNormalButton = createButton("Casa Work Normal", function() {
+  const RabatGNormalButton = createButton("Rabat Students - Graduate studies  Normal", function() {
 (function () {
     "use strict";
 
@@ -761,7 +761,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(6); //6 corresponds to 'Casablanca'
+                    Location.select(4); //4 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -816,7 +816,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                     VisaSubType.select(4); // 4 corresponds to 'Work'
+                     VisaSubType.select(3); // 3 corresponds to ' Students - Graduate studies'
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -899,10 +899,10 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
     //-------------------//
 
 })();
-    console.log("تم تنفيذ الشيفرة لزر Casa Work Normal بنجاح!");
+    console.log("تم تنفيذ الشيفرة لزر  Rabat Students - Graduate studies Normal بنجاح!");
   });
 
-  const CasaWPremiumButton = createButton("Casa Work Premium", function() {
+  const RabatGPremiumButton = createButton("Rabat Students - Graduate studies Premium", function() {
 (function () {
     "use strict";
 
@@ -934,7 +934,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(6); //6 corresponds to 'Casablanca'
+                    Location.select(4); //4 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -989,7 +989,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                     VisaSubType.select(4); // 4 corresponds to 'work'
+                     VisaSubType.select(3); // 3 corresponds to ' Students - Graduate studies'
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -1080,7 +1080,7 @@ $(document).ready(function() {
     //-------------------//
 
 })();
-      console.log("تم تنفيذ الشيفرة لزر Casa Work Premium بنجاح!");
+      console.log("تم تنفيذ الشيفرة لزر  Rabat Students - Graduate studies Premium بنجاح!");
   });
 
   //-----------------------------------------------------------/
@@ -1099,13 +1099,13 @@ if (targetSibling) {
   row1.style.display = 'flex';
   row1.appendChild(RabatLNormalButton);
   row1.appendChild(RabatNNormalButton);
-  row1.appendChild(CasaWNormalButton);
+  row1.appendChild(RabatGNormalButton);
     
   const row2 = document.createElement('div');
   row2.style.display = 'flex';
   row2.appendChild(RabatLPremiumButton);
   row2.appendChild(RabatNPremiumButton);
-  row2.appendChild(CasaWPremiumButton); 
+  row2.appendChild(RabatGPremiumButton); 
 
   // إضافة الصفوف إلى العنصر الذي يحتوي على الأزرار
   buttonsContainer.appendChild(row1);
