@@ -84,7 +84,7 @@ if (window.location.href.startsWith(vtvUrlPrefix)) {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(1); //1 corresponds to 'RabatNational'
+                    VisaType.select(1); //1 corresponds to 'National'
                     VisaType.trigger("change");
 
                  await new Promise(resolve => {
@@ -269,7 +269,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(1); // 1 corresponds to 'RabatNational'
+                    VisaType.select(1); // 1 corresponds to 'National'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -418,7 +418,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(6); //6 corresponds to 'Casablanca'
+                    Location.select(4); //4 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -473,7 +473,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                     VisaSubType.select(2); //2 corresponds to 'family reunification visa '
+                     VisaSubType.select(2); //2 corresponds to ' Non-tertiary studies '
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
