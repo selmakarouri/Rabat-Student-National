@@ -1097,13 +1097,13 @@ if (targetSibling) {
     // إضافة الأزرار إلى العنصر الذي يحتوي على الأزرار
  const row1 = document.createElement('div');
   row1.style.display = 'flex';
-  row1.appendChild(RabatSNormalButton);
+  row1.appendChild(RabatLNormalButton);
   row1.appendChild(RabatNNormalButton);
   row1.appendChild(CasaWNormalButton);
     
   const row2 = document.createElement('div');
   row2.style.display = 'flex';
-  row2.appendChild(RabatSPremiumButton);
+  row2.appendChild(RabatLPremiumButton);
   row2.appendChild(RabatNPremiumButton);
   row2.appendChild(CasaWPremiumButton); 
 
