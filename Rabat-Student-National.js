@@ -557,7 +557,7 @@ const RabatLPremiumButton = createButton(" Rabat Language/selectivity  Premium",
 })();
     console.log("تم تنفيذ الشيفرة لزر CAsa reunification visa   Normal بنجاح!");
   });
-  const CasaRPremiumButton = createButton("Casa  reunification visa  Premium", function() {
+  const RabatRPremiumButton = createButton("Casa  reunification visa  Premium", function() {
 (function () {
     "use strict";
 
